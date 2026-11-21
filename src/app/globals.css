@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "agro";
+  default: true;
+  color-scheme: light;
+  --color-base-100: #fffdf7;
+  --color-base-200: #f6f0e1;
+  --color-base-300: #e6dcc4;
+  --color-base-content: #2b2418;
+  --color-primary: #2f5d3a;
+  --color-primary-content: #fdf8ea;
+  --color-secondary: #b9791b;
+  --color-secondary-content: #fffaf0;
+  --color-accent: #8a3f1d;
+  --color-accent-content: #fff4ea;
+  --color-neutral: #33281a;
+  --color-neutral-content: #f4ead3;
+  --color-info: #2b6c8f;
+  --color-success: #3c8a4f;
+  --color-warning: #d89a1d;
+  --color-error: #b3392f;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+}
+
+@plugin "daisyui/theme" {
+  name: "agro-dark";
+  prefersdark: true;
+  color-scheme: dark;
+  --color-base-100: #1c1a14;
+  --color-base-200: #252218;
+  --color-base-300: #35301f;
+  --color-base-content: #f0e8d2;
+  --color-primary: #7fbf8c;
+  --color-primary-content: #12200f;
+  --color-secondary: #e4a93c;
+  --color-secondary-content: #2a1b00;
+  --color-accent: #d98a5f;
+  --color-accent-content: #2a1206;
+  --color-neutral: #0f0e0a;
+  --color-neutral-content: #e9e0c9;
+  --color-info: #6bb0d4;
+  --color-success: #6fc382;
+  --color-warning: #e4b24a;
+  --color-error: #e0716a;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-hind), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-fraunces), var(--font-hind), Georgia, serif;
+}
+
+body { font-family: var(--font-sans); }
+.section-title { font-family: var(--font-heading); font-weight: 700; font-size: clamp(1.6rem, 3.2vw, 2.2rem); line-height: 1.15; }
+.section-sub { color: color-mix(in oklab, var(--color-base-content) 65%, transparent); max-width: 40rem; }
+.btn-brand { background: var(--color-primary); color: var(--color-primary-content); border: none; }
+.btn-brand:hover { filter: brightness(1.12); }
+.btn-honey { background: var(--color-secondary); color: var(--color-secondary-content); border: none; }
+.btn-honey:hover { filter: brightness(1.08); }
+.field-rows { background-image: repeating-linear-gradient(0deg, transparent 0 22px, color-mix(in oklab, var(--color-primary) 10%, transparent) 22px 23px); }
+@media print { .no-print { display: none !important; } }
