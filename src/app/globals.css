@@ -56,12 +56,44 @@
   --font-heading: var(--font-fraunces), var(--font-hind), Georgia, serif;
 }
 
-body { font-family: var(--font-sans); }
-.section-title { font-family: var(--font-heading); font-weight: 700; font-size: clamp(1.6rem, 3.2vw, 2.2rem); line-height: 1.15; }
-.section-sub { color: color-mix(in oklab, var(--color-base-content) 65%, transparent); max-width: 40rem; }
-.btn-brand { background: var(--color-primary); color: var(--color-primary-content); border: none; }
-.btn-brand:hover { filter: brightness(1.12); }
-.btn-honey { background: var(--color-secondary); color: var(--color-secondary-content); border: none; }
-.btn-honey:hover { filter: brightness(1.08); }
-.field-rows { background-image: repeating-linear-gradient(0deg, transparent 0 22px, color-mix(in oklab, var(--color-primary) 10%, transparent) 22px 23px); }
-@media print { .no-print { display: none !important; } }
+body {
+  font-family: var(--font-sans);
+}
+.section-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  line-height: 1.15;
+}
+.section-sub {
+  color: color-mix(in oklab, var(--color-base-content) 65%, transparent);
+  max-width: 40rem;
+}
+.btn-brand {
+  background: var(--color-primary);
+  color: var(--color-primary-content);
+  border: none;
+}
+.btn-brand:hover {
+  filter: brightness(1.12);
+}
+.btn-honey {
+  background: var(--color-secondary);
+  color: var(--color-secondary-content);
+  border: none;
+}
+.btn-honey:hover {
+  filter: brightness(1.08);
+}
+.field-rows {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent 0 22px,
+    color-mix(in oklab, var(--color-primary) 10%, transparent) 22px 23px
+  );
+}
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
