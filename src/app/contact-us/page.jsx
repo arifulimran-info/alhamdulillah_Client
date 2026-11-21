@@ -26,7 +26,7 @@ export default function ContactPage() {
         <ul className="mt-6 space-y-2 text-base-content/80">
           <li>alhamdulillahagro.2027@gmail.com</li>
           <li>+880 1715-818969 (10am to 10pm)</li>
-          <li>{t(Bansbari, 7th Word, Ranisankail Pourashava, Ranisankail, Thakurgaon)}</li>
+          <li>{t("Banshbari, Ranisankail, Thakurgaon")}</li>
         </ul>
       </div>
       <form
