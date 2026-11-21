@@ -1,4 +1,6 @@
 import StaticPage from "@/components/StaticPage";
 import { STATIC } from "@/lib/staticContent";
 export const metadata = { title: STATIC.terms.en.title };
-export default function Page() { return <StaticPage page={STATIC.terms} />; }
+export default function Page() {
+  return <StaticPage page={STATIC.terms} />;
+}
